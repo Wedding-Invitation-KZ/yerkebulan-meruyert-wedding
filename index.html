@@ -242,7 +242,8 @@ h2.in::after { width: 120px; }
 }
 .js .cal-grid .d.big svg { transform: translate(-50%, -50%) scale(0); transition: transform .8s cubic-bezier(.3,1.6,.5,1) .5s; }
 .js .in .cal-grid .d.big svg, .js .cal-grid.in .d.big svg { transform: translate(-50%, -50%) scale(1); }
-.time { margin-top: 12px; font-size: 24px; font-weight: 700; }
+.time { margin-top: 20px; font-size: clamp(16px, 5vw, 20px); font-weight: 700; letter-spacing: .12em; line-height: 1.75; }
+.time span { display: block; white-space: nowrap; }
 
 /* ---------- Address ---------- */
 .address p { font-size: 22px; font-weight: 700; }
@@ -429,7 +430,7 @@ form .btn { width: 100%; margin-top: 8px; text-align: center; font-size: 20px; f
     <div class="calendar reveal" style="--d:.15s">
       <div class="cal-grid" id="cal"></div>
     </div>
-    <p class="time reveal">Сағат 18:00-де<br>басталады</p>
+    <p class="time reveal"><span>Сағат 18:00-де Беташар</span><span>Сағат 19:00-де Той</span></p>
   </section>
 
   <section class="address">
